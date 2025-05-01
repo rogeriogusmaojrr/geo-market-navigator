@@ -13,6 +13,7 @@ import Sales from "./pages/Sales";
 import Stores from "./pages/Stores";
 import Reports from "./pages/Reports";
 import NotFound from "./pages/NotFound";
+import ExampleList from "./pages/ExampleList";
 import { AuthProvider } from "./contexts/AuthContext";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/sales" element={<Sales />} />
             <Route path="/stores" element={<Stores />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/example-list" element={<ExampleList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </TooltipProvider>
